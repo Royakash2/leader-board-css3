@@ -1,0 +1,25 @@
+ /* fonts */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Red+Hat+Display:wght@500;700;900&family=Work+Sans:wght@400;700&display=swap');
+ /* comon styles or utilites */
+ body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f1ff;
+ }
+ .container{
+    background-color: #ffffff;
+ }
+ /* -------Top players styles--------  */
+ .players {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+ }
+
+ .player {
+     display: flex;
+     align-items: center;
+ }
+
+ .player img{
+     width: 56px;
+     height: 56px;
+ }
