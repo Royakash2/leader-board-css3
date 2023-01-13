@@ -13,6 +13,7 @@
      width: 1440px;
      height: 94px;
      background-color: #562EFF;
+    
      display: flex;
      justify-content: space-around;
      align-items: center;
@@ -22,6 +23,7 @@
      display: flex;
      align-items: center;
      gap: 15px;
+     padding-right:200px;
  }
 
  .nav-menu ul {
@@ -29,6 +31,7 @@
      justify-content: space-around;
      align-items: center;
      gap: 36px;
+     padding-right: 200px;
  }
 
  li {
@@ -165,6 +168,9 @@
      .nav-bar{
         width: 100%;
      }
+     .nav-title{ 
+        padding-left: 10px;
+     }
 
      .players,
      .blogs,
@@ -177,7 +183,6 @@
      .course {
          flex-direction: column;
      }
-
      .blogs {
          grid-template-columns: repeat(1, 1fr);
      }
@@ -189,6 +194,9 @@ Medium divice-------
  @media screen and (min-width: 577px) and (max-width: 992px) {
      .nav-bar, .container {
          width: 100%;
+     }
+     .nav-title{
+        padding: 0;
      }
     
 
