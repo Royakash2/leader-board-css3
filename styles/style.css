@@ -8,6 +8,37 @@
      background-color: #f3f1ff;
  }
 
+ /* Navigation Bar start here */
+ .nav-bar {
+     width: 1440px;
+     height: 94px;
+     background-color: #562EFF;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ .nav-title {
+     display: flex;
+     align-items: center;
+     gap: 15px;
+ }
+
+ .nav-menu ul {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     gap: 36px;
+ }
+
+ li {
+     list-style: none;
+ }
+
+ /* -------
+ main menu styles 
+ --------------------*/
+
  main {
      display: flex;
      align-items: center;
@@ -128,25 +159,42 @@
  Media Queries -----
  -------------------------*/
  @media screen and (max-width: 576px) {
-    .container{
+     .container {
+         width: 100%;
+     }
+     .nav-bar{
         width: 100%;
-    }
-     .players, .blogs, .courses {
+     }
+
+     .players,
+     .blogs,
+     .courses {
          grid-template-columns: repeat(1, 1fr);
      }
-     .player, .blog, .course{
-        flex-direction: column;
+
+     .player,
+     .blog,
+     .course {
+         flex-direction: column;
      }
-     .blogs{
-        grid-template-columns: repeat(1, 1fr);
+
+     .blogs {
+         grid-template-columns: repeat(1, 1fr);
      }
-     
+
  }
+/*----------------- 
+Medium divice-------
+------------------ */
  @media screen and (min-width: 577px) and (max-width: 992px) {
-    .container{
-        width: 100%;
-    }
-    .players, .blogs, .courses{
-        grid-template-columns: repeat(2, 1fr);
-    }
+     .nav-bar, .container {
+         width: 100%;
+     }
+    
+
+     .players,
+     .blogs,
+     .courses {
+         grid-template-columns: repeat(2, 1fr);
+     }
  }
